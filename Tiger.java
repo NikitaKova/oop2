@@ -9,7 +9,7 @@ public class Tiger extends Animal implements Runable{
 
     @Override
     public int speedOfRun() {
-        return 15;
+        return 50;
     }
 
     @Override
@@ -19,6 +19,6 @@ public class Tiger extends Animal implements Runable{
 
     @Override
     public String toString() {
-        return String.format("Cat: %s, colour: %s", super.toString(), this.color);
+        return String.format("Tiger: %s, colour: %s", super.toString(), this.color);
     }
 }
