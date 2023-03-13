@@ -4,6 +4,8 @@ import java.util.List;
 public class Zoo {
     private List<Animal> animals;
     private Radio radio = new Radio();
+    private List<Wild> wilds;
+    private List<HomeAnimal> homeAnimals;
 
     public Zoo() {
         this.animals = new ArrayList<>();
@@ -65,11 +67,11 @@ public class Zoo {
         return animals;
     }
 
-    public HomeAnimal[] getHomeAnimals() {
-        return null;
+    public List<HomeAnimal> getHomeAnimals() {
+        return homeAnimals;
     }
 
-    public Wild[] getWild() {
-        return null;
+    public List<Wild> getWild() {
+        return wilds;
     }
 }
