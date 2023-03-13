@@ -15,6 +15,19 @@ public class Main {
             System.out.println(animal.say());
         }
 
+
+        System.out.println("__________________________HomeAnimal");
+
+        for (HomeAnimal speak : zoo.getHomeAnimals()){
+            System.out.println(speak.home());
+        }
+
+        System.out.println("__________________________Wild");
+
+        for (Wild speak : zoo.getWild()){
+            System.out.println(speak.wild());
+        }
+
         System.out.println("__________________________Speakable");
 
         for (Speakable speak : zoo.getSpeakables()){

@@ -1,4 +1,4 @@
-public class Cat extends Animal implements Runable{
+public class Cat extends Animal implements Runable, HomeAnimal {
 
     private String color;
 
@@ -15,6 +15,11 @@ public class Cat extends Animal implements Runable{
     @Override
     public String say() {
         return "Мяу";
+    }
+
+    @Override
+    public String home() {
+        return "Домашний";
     }
 
     @Override

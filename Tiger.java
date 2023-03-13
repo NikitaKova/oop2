@@ -1,4 +1,4 @@
-public class Tiger extends Animal implements Runable{
+public class Tiger extends Animal implements Runable, Wild{
 
     private String color;
 
@@ -10,6 +10,11 @@ public class Tiger extends Animal implements Runable{
     @Override
     public int speedOfRun() {
         return 50;
+    }
+
+    @Override
+    public String wild() {
+        return "Дикий";
     }
 
     @Override

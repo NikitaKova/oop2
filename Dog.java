@@ -1,4 +1,4 @@
-public class Dog extends Animal implements Runable{
+public class Dog extends Animal implements Runable, HomeAnimal{
 
     public Dog(String name, int box) {
         super(name, box);
@@ -7,6 +7,11 @@ public class Dog extends Animal implements Runable{
     @Override
     public int speedOfRun() {
         return 20;
+    }
+    
+    @Override
+    public String home() {
+        return "Домашний";
     }
 
     @Override

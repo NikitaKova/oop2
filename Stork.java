@@ -1,4 +1,4 @@
-public class Stork extends Animal implements Runable, Flyable{
+public class Stork extends Animal implements Runable, Flyable, Wild{
 
     public Stork(String name, int box) {
         super(name, box);
@@ -12,6 +12,11 @@ public class Stork extends Animal implements Runable, Flyable{
     @Override
     public int speedOfRun() {
         return 7;
+    }
+
+    @Override
+    public String wild() {
+        return "Дикий";
     }
 
     @Override

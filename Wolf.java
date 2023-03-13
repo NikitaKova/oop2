@@ -1,4 +1,4 @@
-public class Wolf extends Animal implements Runable{
+public class Wolf extends Animal implements Runable, Wild{
 
     public Wolf(String name, int box) {
         super(name, box);
@@ -7,6 +7,11 @@ public class Wolf extends Animal implements Runable{
     @Override
     public int speedOfRun() {
         return 30;
+    }
+
+    @Override
+    public String wild() {
+        return "Дикий";
     }
 
     @Override

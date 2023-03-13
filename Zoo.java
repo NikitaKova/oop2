@@ -64,4 +64,12 @@ public class Zoo {
     public  List<Animal> getAnimals() {
         return animals;
     }
+
+    public HomeAnimal[] getHomeAnimals() {
+        return null;
+    }
+
+    public Wild[] getWild() {
+        return null;
+    }
 }

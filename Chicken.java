@@ -1,4 +1,4 @@
-public class Chicken extends Animal implements Runable, Flyable{
+public class Chicken extends Animal implements Runable, Flyable, HomeAnimal{
 
     public Chicken(String name, int box) {
         super(name, box);
@@ -12,6 +12,11 @@ public class Chicken extends Animal implements Runable, Flyable{
     @Override
     public int speedOfRun() {
         return 10;
+    }
+
+    @Override
+    public String home() {
+        return "Домашний";
     }
 
     @Override
