@@ -6,8 +6,9 @@ public class Main {
                 .addAnimal(new Dog("Dog", 2))
                 .addAnimal(new Tiger("Tiger", 3, null))
                 .addAnimal(new Stork("Аист", 4))
-                .addAnimal(new Wolf("Wolf", 20)
-                );
+                .addAnimal(new Chicken("Chicken", 5))
+                .addAnimal(new Wolf("Wolf", 20))
+                ;
 
         for (Animal animal : zoo.getAnimals()){
             System.out.println(animal);
