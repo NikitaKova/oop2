@@ -61,17 +61,6 @@ public class Zoo {
 
     }
 
-    public List<Swimable> getSwimable(){
-        List<Swimable> result = new ArrayList<>();
-        for (Animal animal : animals){
-            if (animal instanceof Swimable){
-                result.add((Swimable) animal);
-            }
-        }
-        return result;
-
-    }
-
     public  List<Animal> getAnimals() {
         return animals;
     }
